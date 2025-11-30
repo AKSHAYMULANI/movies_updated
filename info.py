@@ -31,8 +31,8 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1003291791362'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '-1003291791362'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003375963741'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
 
 # MongoDB 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://marutee:marutee@marutee.ekweprt.mongodb.net/?appName=marutee")
