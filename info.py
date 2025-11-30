@@ -28,18 +28,18 @@ USERNAME = environ.get('USERNAME', "akshaymulani") # ADMIN USERNAME
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003291791362').split()]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
-AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003375963741'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', ''))
+AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
 
 # MongoDB 
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://marutee:marutee@marutee.ekweprt.mongodb.net/?appName=marutee")
 DATABASE_NAME = environ.get('DATABASE_NAME', "marutee")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "")
+FILES_DATABASE = environ.get('FILES_DATABASE', "marutee")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jisshu')
 
 # Other Channel's
