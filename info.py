@@ -45,7 +45,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Other Channel's
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0') 
+request_channel = environ.get('REQUEST_CHANNEL', '-1003375963741') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0')) 
 
