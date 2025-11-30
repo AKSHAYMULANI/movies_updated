@@ -22,7 +22,7 @@ PORT = environ.get('PORT', '8082')
 # Owners 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '933064491').split()]
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'akshaymulani') # without @ or https://t.me/ 
-USERNAME = environ.get('USERNAME', "https://t.me/akshaymulani") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "akshaymulani") # ADMIN USERNAME
 
 # Database Channel 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003291791362').split()]
